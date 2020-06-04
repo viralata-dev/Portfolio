@@ -30,23 +30,30 @@ main .titulo {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  padding: 0 15% 5%;
+  padding: 0 15% 2.5%;
 }
 
 main .titulo h2 {
-  font-size: 3em;
+  font-size: 3.5em;
   margin: 10px 0;
   /* margin: 15px; */
 }
-
+main .titulo h4 {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  /* margin: 15px; */
+}
 main .titulo p {
   line-height: 150%;
+  width: 75%;
+  margin: 2.5% auto 0;
 }
 
 .grid-container {
   display: grid;
   row-gap: 30px;
-  padding: 60px 25%;
+  padding: 30px 25% 60px;
 }
 
 img {

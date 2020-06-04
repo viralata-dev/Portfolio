@@ -46,13 +46,16 @@ h4 {
 }
 
 header {
-  width: 90%;
+  width: 100vw;
   margin: 0 auto;
+  /* position: fixed; */
+  padding: 0 5%;
+  background: var(--roxo-escuro);
+  z-index: 50;
 }
 
 nav {
-  background: var(--roxo-escuro);
-  height: 70px;
+  height: 60px;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,11 +69,12 @@ nav {
 }
 
 nav .nav-logo {
-  width: 35px;
+  width: 25px;
 }
 
 nav .nav-brand {
-  width: 130px;
+  width: 110px;
+  transform: translateY(2px);
 }
 
 nav #menu {
@@ -78,11 +82,13 @@ nav #menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   height: 100%;
 }
 
 nav #menu .menu-item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 0px 30px;
   cursor: pointer;
   line-height: 70px;
@@ -289,8 +295,8 @@ h2 {
 }
 
 footer {
-  background-color: var(--laranja-escuro);
-  color: var(--roxo-vibrante);
+  background-color: var(--roxo-meiotermo);
+  color: var(--laranja-escuro);
   padding: 15px 30px;
   text-align: center;
 }
