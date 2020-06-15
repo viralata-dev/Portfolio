@@ -1,7 +1,22 @@
 {
   "folders": [
-	{
-		"path": "."
-	}
-]
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 6970
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/style/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/style/css"
+    }
+  ]
 }

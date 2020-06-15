@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $roxo-escuro;
+  font-family: Montserrat, sans-serif;
+  color: $laranja-escuro;
+  font-weight: 300;
+  -webkit-font-smoothing: atialiased;
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  color: $laranja-claro;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: $laranja-claro;
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 5em;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clickable {
+  transition: all 0.4s ease-in-out;
+}
+
+.clickable:hover {
+  color: $roxo-escuro;
+  background-color: $laranja-escuro;
+}
+
+//   -------- NAVBAR --------
+
+header {
+  // width: 100vw;
+  // margin: 0 auto;
+  padding: 0 7.5%;
+  background: $roxo-escuro;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-logo {
+    min-width: 25px;
+    max-width: 25px;
+  }
+
+  .nav-brand {
+    width: auto;
+    max-height: 35px;
+    transform: translateY(2px);
+  }
+
+  #menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 100;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+    }
+  }
+}
+
+//   --------- HERO ----------
+
+#hero {
+  display: flex;
+  background: linear-gradient(180deg, $roxo-escuro 0%, $roxo-vibrante 100%),
+    $roxo-escuro;
+  height: auto;
+  padding: 5% 2.5%;
+
+  .lado1,
+  .lado2 {
+    min-height: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero-text {
+    .barra {
+      width: 40%;
+      height: 6px;
+      border-radius: 50px;
+      background-color: $laranja-escuro;
+      opacity: 0.5;
+      margin-top: 20px;
+    }
+
+    li {
+      font-size: 1.3em;
+      line-height: 1.8em;
+    }
+  }
+
+  .perfil {
+    min-width: 50%;
+    display: flex;
+
+    #bg-photo {
+      position: relative;
+      max-width: 660px;
+
+      img {
+        position: absolute;
+        z-index: 50;
+        top: 17%;
+        left: 17%;
+        width: 59%;
+        border-radius: 5%;
+      }
+    }
+
+    .grafico-noodles {
+      position: absolute;
+      // transform: translate(-50%, -45%);
+      bottom: 40%;
+      right: 50%;
+      opacity: 0.2;
+      width: 100%;
+    }
+  }
+}
+
+//  ----------- PORTFOLIO -----------
+
+#portfolio {
+  // width: 100%;
+
+  .portfolio-titulo {
+    text-align: center;
+    background-image: url("/img/BG-Noodles.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0%;
+    background-attachment: fixed;
+    margin-top: 0;
+    padding: 4% 0;
+  }
+
+  .portfolio-item {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex: 1;
+      padding: 15px 50px;
+    }
+
+    img {
+      max-width: 80%;
+      box-shadow: -4px 4px 10px rgba(27, 6, 31, 0.45);
+      min-height: 40%;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    p {
+      line-height: 130%;
+      font-size: 0.9em;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    a {
+      line-height: 120%;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      display: block;
+      letter-spacing: 1pt;
+    }
+
+    .item-CTA {
+      margin-top: 1em;
+      border: solid 1px $laranja-claro;
+      width: fit-content;
+      padding: 7px 15px;
+      align-self: flex-start;
+    }
+  }
+}
+
+.esquerda {
+  img {
+    margin-right: 40px;
+  }
+}
+
+.direita {
+  background-color: $roxo-meiotermo;
+  img {
+    margin-left: 40px;
+  }
+}
+// -------- CONTATO ----------
+
+#contato {
+  text-align: center;
+  display: flex;
+  padding: 40px 0;
+  flex-direction: column;
+
+  h2 {
+    font-size: 3.5em;
+    margin: 15px auto;
+  }
+
+  a {
+    display: inline-block;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+
+    :hover {
+      color: $laranja-escuro;
+    }
+  }
+
+  img {
+    width: 30px;
+    margin: 20px auto 10px;
+  }
+}
+
+footer {
+  background-color: $roxo-meiotermo;
+  color: $laranja-escuro;
+  padding: 2% 30px;
+  text-align: center;
+
+  span {
+    font-weight: 400;
+    margin: 0 auto;
+  }
+}
