@@ -98,7 +98,7 @@ $breakpoint-mobile: 425px;
   #portfolio {
     .portfolio-titulo {
       padding: 5% 0;
-      height: 100%;
+      background-size: 150%;
 
       h4 {
         font-size: calc(1em + 1.5vw);
@@ -159,6 +159,17 @@ $breakpoint-mobile: 425px;
     }
   }
 
+  #portfolio {
+    .portfolio-titulo {
+      background-size: 250%;
+      background-position: center;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
   #hero {
     padding: 0px 5%;
     flex-direction: column-reverse;
@@ -175,7 +186,7 @@ $breakpoint-mobile: 425px;
     .titulo {
       flex: 1;
       margin: 0 auto;
-      padding: 0 2.5% 2.5%;
+      padding: 5% 2.5% 10%;
 
       h2 {
         margin: 10px 0;
@@ -190,12 +201,21 @@ $breakpoint-mobile: 425px;
         width: 80%;
       }
     }
+    .back {
+      left: 2.5%;
+    }
   }
 
   .grid-container {
     display: grid;
-    row-gap: 30px;
+    row-gap: 10px;
     padding: 30px 10% 60px;
+  }
+
+  .fundo-prscl {
+    background: linear-gradient(320deg, #fff8fa 0%, #e3c2c0 100%), #e3c2c0;
+    padding: 2.5%;
+    margin: 30px 10% 60px;
   }
 }
 @media (max-width: $breakpoint-tablet) {
@@ -203,7 +223,7 @@ $breakpoint-mobile: 425px;
     .titulo {
       flex: 1;
       margin: 0 auto;
-      padding: 0 2.5% 2.5%;
+      padding: 0 2.5% 10%;
 
       h2 {
         font-size: calc(12px + 5vw);
@@ -220,6 +240,9 @@ $breakpoint-mobile: 425px;
         // margin: 2.5% auto 0;
         font-size: calc(9px + 1vw);
       }
+    }
+    .back {
+      display: none;
     }
   }
 }
