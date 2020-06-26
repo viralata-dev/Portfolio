@@ -1,12 +1,12 @@
 // @import "colors";
 
-main {
+.main {
   background: linear-gradient(180deg, $roxo-escuro 0%, $roxo-vibrante 100%);
-  text-align: center;
   padding-bottom: 50px;
   position: relative;
 
   .titulo {
+    text-align: center;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -32,6 +32,7 @@ main {
   }
   .back {
     // border: 1px solid $laranja-escuro;
+    text-align: center;
     color: $laranja-escuro;
     position: fixed;
     left: 4%;
