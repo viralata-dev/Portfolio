@@ -326,15 +326,15 @@ footer span {
   margin: 0 auto;
 }
 
-main {
+.main {
   background: -webkit-gradient(linear, left top, left bottom, from(#1c001d), to(#330035));
   background: linear-gradient(180deg, #1c001d 0%, #330035 100%);
-  text-align: center;
   padding-bottom: 50px;
   position: relative;
 }
 
-main .titulo {
+.main .titulo {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,24 +353,25 @@ main .titulo {
   padding: 0 15% 2.5%;
 }
 
-main .titulo h2 {
+.main .titulo h2 {
   font-size: 3.5em;
   margin: 10px 0;
 }
 
-main .titulo h4 {
+.main .titulo h4 {
   font-size: 1.2em;
   margin: 10px 0 0;
   text-transform: uppercase;
 }
 
-main .titulo p {
+.main .titulo p {
   line-height: 150%;
   width: 75%;
   margin: 2.5% auto 0;
 }
 
-main .back {
+.main .back {
+  text-align: center;
   color: #f7931e;
   position: fixed;
   left: 4%;
@@ -384,7 +385,7 @@ main .back {
           box-shadow: 5px 5px 10px #1700186b, -5px -5px 10px #2400255b;
 }
 
-main .back:hover {
+.main .back:hover {
   background: linear-gradient(145deg, #23002593, #2a002c88);
   -webkit-box-shadow: 3px 3px 6px #17001873, -3px -3px 6px #240025;
           box-shadow: 3px 3px 6px #17001873, -3px -3px 6px #240025;
@@ -392,7 +393,7 @@ main .back:hover {
           transform: scale(0.95);
 }
 
-main .back i {
+.main .back i {
   font-size: 1.2rem;
   margin-bottom: 5px;
   color: #fbb03b;
