@@ -706,4 +706,67 @@ footer span {
           transform: scale(0);
   opacity: 0;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 80vw;
+  padding: 2.5%;
+  margin: 5% auto;
+}
+
+.container a {
+  margin: 0 auto;
+  display: inline-block;
+  opacity: 0.85;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.container a:hover {
+  opacity: 1;
+}
+
+.container a .estudos-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vh;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 6px #1c001d;
+          box-shadow: 3px 3px 6px #1c001d;
+}
+
+.container a .estudos-card .card-cover {
+  background-image: url("/img/estudos/alion.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container a .estudos-card .card-infos {
+  padding: 0.5em 1.5em 1em;
+  margin-top: auto;
+  background-color: #1c001d;
+  text-align: center;
+}
+
+.container a .estudos-card .card-infos .estudos-titulo {
+  font-size: 1.5em;
+}
+
+.container a .estudos-card .card-infos .estudos-description {
+  font-weight: 300;
+}
 /*# sourceMappingURL=main.css.map */

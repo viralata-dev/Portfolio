@@ -1,0 +1,207 @@
+body {
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #b9b9b9;
+  text-shadow: 1px 1px white, -1px -1px #444;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  box-shadow: 10px 10px 20px #c5c5c5, -10px -10px 20px #ffffff;
+  border-radius: 38px;
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.game-over {
+  color: red;
+  font-size: 5em;
+}
+
+.destroyed {
+  transform: scale(0);
+}
+
+.no-clicks {
+  pointer-events: none;
+}
+
+/* .d-none {
+  display: none;
+} */
+
+h2 {
+  display: none;
+  transform: scale(0);
+  font-family: "Press Start 2P", cursive;
+  color: #b9b9b9;
+  text-shadow: 1px 1px white, -1px -1px #444;
+  transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s;
+  animation: blink 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite
+    alternate /*direction fill-mode*/;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+
+.restart {
+  display: block;
+  transform: scale(1);
+  line-height: 150%;
+  font-size: 2.5em;
+  margin-top: 35%;
+}
+
+#orange {
+  transition-delay: 0s;
+}
+#blue {
+  transition-delay: 0.1s;
+}
+#green {
+  transition-delay: 0.2s;
+}
+#pink {
+  transition-delay: 0.3s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes destroy {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes orange {
+  0% {
+    background-image: url(img/Laranja-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+  50% {
+    background-image: url(img/Laranja-On.svg),
+      linear-gradient(145deg, #cecece, #f5f5f5);
+  }
+
+  100% {
+    background-image: url(img/Laranja-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+}
+
+@keyframes blue {
+  0% {
+    background-image: url(img/Azul-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+  50% {
+    background-image: url(img/Azul-On.svg),
+      linear-gradient(145deg, #cecece, #f5f5f5);
+  }
+
+  100% {
+    background-image: url(img/Azul-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+}
+
+@keyframes green {
+  0% {
+    background-image: url(img/Verde-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+  50% {
+    background-image: url(img/Verde-On.svg),
+      linear-gradient(145deg, #cecece, #f5f5f5);
+  }
+
+  100% {
+    background-image: url(img/Verde-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+}
+
+@keyframes pink {
+  0% {
+    background-image: url(img/Rosa-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+  50% {
+    background-image: url(img/Rosa-On.svg),
+      linear-gradient(145deg, #cecece, #f5f5f5);
+  }
+
+  100% {
+    background-image: url(img/Rosa-Off.svg),
+      linear-gradient(145deg, #f5f5f5, #cecece);
+  }
+}
+
+.orange,
+.blue,
+.green,
+.pink {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.orange {
+  background-image: url(img/Laranja-Off.svg),
+    linear-gradient(145deg, #f5f5f5, #cecece);
+}
+
+.blue {
+  background-image: url(img/Azul-Off.svg),
+    linear-gradient(145deg, #f5f5f5, #cecece);
+}
+
+.green {
+  background-image: url(img/Verde-Off.svg),
+    linear-gradient(145deg, #f5f5f5, #cecece);
+}
+
+.pink {
+  background-image: url(img/Rosa-Off.svg),
+    linear-gradient(145deg, #f5f5f5, #cecece);
+}
+
+.orange-pressed {
+  animation: orange 0.5s ease-in-out;
+}
+
+.blue-pressed {
+  animation: blue 0.5s ease-in-out;
+}
+
+.green-pressed {
+  animation: green 0.5s ease-in-out;
+}
+
+.pink-pressed {
+  animation: pink 0.5s ease-in-out;
+}
