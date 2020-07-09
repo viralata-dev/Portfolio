@@ -19,6 +19,7 @@ $(document).keypress(function (event) {
     if (!started) {
         if (event.which == 32) {
 
+            $(".btn").removeClass("no-clicks");
             nextSequence();
         }
     }
